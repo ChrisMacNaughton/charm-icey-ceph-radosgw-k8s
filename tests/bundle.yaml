@@ -1,0 +1,15 @@
+bundle: kubernetes
+applications:
+  icey-ceph-radosgw-k8s:
+    charm: ../icey-ceph-radosgw-k8s_ubuntu-22.04-amd64.charm
+    scale: 1
+    trust: true
+    resources:
+      radosgw-image: iceyec/ceph-rgw-zipper
+  argo-controller:
+    charm: argo-controller
+    channel: 3.3/stable
+    scale: 1
+relations:
+- - argo-controller:object-storage
+  - icey-ceph-radosgw-k8s:object-storage
