@@ -85,11 +85,6 @@ class CephRadosgwK8SCharm(CharmBase):
     def _on_radosgw_pebble_ready(self, event):
         """Define and start a workload using the Pebble API.
 
-        TEMPLATE-TODO: change this example to suit your needs.
-        You'll need to specify the right entrypoint and environment
-        configuration for your specific workload. Tip: you can see the
-        standard entrypoint of an existing container using docker inspect
-
         Learn more about Pebble layers at https://github.com/canonical/pebble
         """
         # Get a reference the container attribute on the PebbleReadyEvent
@@ -134,11 +129,6 @@ class CephRadosgwK8SCharm(CharmBase):
     def _on_config_changed(self, _):
         """Just an example to show how to deal with changed configuration.
 
-        TEMPLATE-TODO: change this example to suit your needs.
-        If you don't need to handle config, you can remove this method,
-        the hook created in __init__.py for it, the corresponding test,
-        and the config.py file.
-
         Learn more about config at https://juju.is/docs/sdk/config
         """
         # current = self.config["thing"]
@@ -149,11 +139,6 @@ class CephRadosgwK8SCharm(CharmBase):
 
     def _on_create_user_action(self, event):
         """Just an example to show how to receive actions.
-
-        TEMPLATE-TODO: change this example to suit your needs.
-        If you don't need to handle actions, you can remove this method,
-        the hook created in __init__.py for it, the corresponding test,
-        and the actions.py file.
 
         Learn more about actions at https://juju.is/docs/sdk/actions
         """
