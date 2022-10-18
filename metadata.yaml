@@ -10,7 +10,7 @@ description: |
   TEMPLATE-TODO: fill out the charm's description
 summary: |
   TEMPLATE-TODO: fill out the charm's summary
-
+source: https://github.com/ChrisMacNaughton/charm-icey-ceph-radosgw-k8s
 # TEMPLATE-TODO: replace with containers for your workload (delete for non-k8s)
 containers:
   radosgw:
