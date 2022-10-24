@@ -20,6 +20,9 @@ storage:
   ceph-conf:
     type: filesystem
     location: /etc/ceph
+  ceph-storage:
+    type: filesystem
+    location: /var/lib/ceph/radosgw
 
 resources:
   radosgw-image:
@@ -29,7 +32,4 @@ resources:
 provides:
   object-storage:
     interface: object-storage
-# requires:
-#   ingress:
-#     interface: ingress
-#     limit: 1
+
